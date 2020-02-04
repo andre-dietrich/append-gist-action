@@ -49,7 +49,7 @@ let req = https.request(options, (resp) => {
   let data = '';
 
   resp.on('data', (chunk) => {
-    data += chunk;
+    data = chunk;
   });
 
   resp.on('end', () => {
